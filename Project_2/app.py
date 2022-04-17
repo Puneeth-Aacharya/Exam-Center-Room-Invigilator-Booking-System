@@ -24,7 +24,7 @@ app.secret_key = 'development key'
 app.config['FLASK_ADMIN_SWATCH']='cerulean'
 
 """
-DB_URI = "mongodb+srv://Puneeth:puneeth@cluster0.h225z.mongodb.net/INTERSHIP_PROJECT?retryWrites=true&w=majority"
+DB_URI = "<your mongodb atals link>"
 app.config["MONGODB_HOST"] = DB_URI
 """
 app.config['MONGODB_SETTINGS'] = {
