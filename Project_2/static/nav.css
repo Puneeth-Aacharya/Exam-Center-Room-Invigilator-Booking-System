@@ -1,0 +1,97 @@
+.nav{
+    background-color: green;
+    height:30px;
+    padding:2%;
+}
+body{
+    background-color: black;
+}
+.nav button{
+    border:none;
+    padding:1%;
+    width:15%;
+    background-color: green;
+    font-size: 20px;
+    text-decoration: none;
+    float: right;
+    font-weight: bold;
+}
+.nav button:hover{
+    font-size:25px;
+    border-radius:5px;
+    color: white;
+}
+.nav a{
+    padding-left: 2%; 
+}
+.nav h2{
+    color: blanchedalmond;
+}
+.exam_center{
+    padding: 30px;
+    padding-left: 10%;
+
+}
+.exam_center tr{
+    padding: 20px;
+}
+.exam_center td{
+    color:white;
+    font-size: 30px;
+    padding: 10px;
+}
+.exam_center input{
+    height:40px;
+    font-size: 20px;
+    width:80%;
+}
+.submit {
+    border:none;
+    padding:1%;
+    width:20%;
+    background-color: rgb(77, 243, 215);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboard{
+    padding-top:5%;
+    padding-right: 3%;
+}
+.dashboard button{
+    border:none;
+    padding:15px;
+    font-size: 25px;
+    font-weight: bold;
+    width:160%;
+    cursor: pointer;
+    height:70px;
+    border-radius: 10px;
+}
+.dashboard button:hover{
+    background-color: rgb(247, 170, 83);
+}
+
+.dashboard a{
+    text-decoration: none;
+    transition: 0.9s;
+}
+.dashboard td{
+    padding:20px;
+}
+
+#login_div{
+    font-size:18px;
+    font-weight:bold; 
+    padding-top: 20px;
+}
+.login_table tr{
+    color:white;
+    font-size: 25px;
+}
+.login_table span{
+    font-size: 50px;
+}

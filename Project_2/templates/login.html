@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Exam Center Room Invigilator booking system - Flask</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='staff.css') }}">
+    </head>
+    <body>
+        {% include 'index.html' %}
+        <h2 style = "text-align: center;color: white;font-size: 40px; padding: 15px;">Login / Sign In</h2>
+        <form action = "http://localhost:5000/login" method = "POST">
+        {{ form.hidden_tag() }}
+        <center>
+        <fieldset style="width:50%;height:250px;">
+            <div id="login_div"  align="center">
+
+                <table class="staff_add">
+                    <tr><td>{{ form.email.label }} : </td><td id="input"> <span>{{ form.email }}</span></td></tr>
+                    <tr><td>{{ form.password.label }} : </td><td id="input"> {{ form.password }}</td></tr>
+                </table>
+                <center><input class="submit" id="submit" type=submit value=Login></center>
+            </div>
+        </fieldset>
+        </center>
+    </form>
+</body>
+</html>

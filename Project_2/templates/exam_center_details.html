@@ -1,0 +1,38 @@
+<html>
+ <head>
+    <title>Exam Center Details - Admin</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+</head>
+<body style="background-color: black; color: white;">
+
+    <div class="nav">
+        <nav>
+            <a href="{{url_for('admin')}}"><button>Home</button></a>
+            <a href="{{url_for('home')}}"><button>Log out</button></a>
+        </nav>
+    </div>
+
+   
+
+    <div style="padding: 15px;" align="center">
+        <h1>Exam Center Details</h1>
+    </div>
+    <div>
+        <p>Total Rooms = {{ count }}</p>
+    </div>
+    <div style="padding: 10px;"></div>
+    <table  calss="allot_list" border="border" align="center">
+        <tr><th style="padding: 10px;">Center ID</th><th>Center Name</th><th>Room No</th><th>Address</th><th>Contact Number</th></tr>
+        {% for i in data %}
+            <tr>
+                <td>{{ i['center_id'] }}</td>
+                <td>{{ i['center_name'] }}</td>
+                <td>{{ i['room_no'] }}</td>
+                <td>{{ i['address'] }}</td>
+                <td>{{ i['contatct_no'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>

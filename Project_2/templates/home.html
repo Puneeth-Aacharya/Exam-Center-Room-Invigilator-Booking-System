@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exam Center Room Invigilator booking system - Flask</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='nav.css') }}">
+    </head>
+    <body>
+        <div class="nav">
+        <nav>
+            <a href="{{url_for('nav')}}"><button>Home</button></a>
+     
+            
+        </nav>
+        </div>
+        
+        <h2 style="color: white; font-size: 40px;" align="center">Welcome to Exam Center Room Invigilator Booking System</h2>
+        <div>
+            <table class="dashboard" align="center">
+                <tr><td><button><a href="{{url_for('login_redirect')}}">Login / Sign in</a></button></td></tr>
+                <tr><td><button><a href="{{url_for('staff_register')}}">Invigilator Register</a></button></td></tr>
+            </table>
+        </div>
+        <div align="center">
+            <footer style="color: white;position: absolute;width:99%;bottom: 0;height: 60px;">&copy;&nbsp;&nbsp;Puneeth K S | 2022 | Shivamogga</footer>>
+        </div>
+
+    </body>
+</html>

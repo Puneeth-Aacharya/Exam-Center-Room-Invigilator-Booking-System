@@ -1,0 +1,22 @@
+<html>
+ <head>
+    <title>Done</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+</head>
+<body style="background-color: black; color: white;">
+
+    <div class="nav">
+        <nav>
+            <a href="{{url_for('admin')}}"><button>Home</button></a>
+            <a href="{{url_for('home')}}"><button>Log out</button></a>
+        </nav>
+    </div>
+
+   
+    <div style="padding: 10px;" align="center">
+        <h1>{{ data }}</h1>
+    </div>
+    
+</div>
+</body>
+</html>

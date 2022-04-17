@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Add Exam Center - Admin</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+    </head>
+<body>
+    <div class="nav">
+        <nav>
+            <a href="{{url_for('admin')}}"><button>Home</button></a>
+            <a href="{{url_for('home')}}"><button>Log out</button></a>
+        </nav>
+    </div>
+    <h1 style="color: white;" align="center"> Add Exam Centers</h1>
+    <form action=http://localhost:5000/add method=POST>
+        <table class="exam_center" align="center">
+            <tr><td>Center Name :</td><td><input type=text name= center_name></td></tr>
+            <tr><td>Center ID :</td><td><input type=text name=center_id></td></tr>
+            <tr><td>Room No :</td><td><input type=text name=room_no></td></tr>
+            <tr><td>Address :</td><td><input type=text name=address></td></tr>
+            <tr><td>Contatct No. :</td><td><input type=text name=contatct_no></td></tr>
+        </table>
+        <center><input class="submit" type=submit value=Add></center>
+    </form>
+</body>
+</html>

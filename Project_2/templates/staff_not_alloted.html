@@ -1,0 +1,27 @@
+<html>
+ <head>
+    <title>Staff </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+</head>
+<body style="background-color: black; color: white;">
+
+    <div class="nav">
+        <nav>
+            <a href="{{url_for('admin')}}"><button>Home</button></a>
+            <a href="{{url_for('staff_allotment_list')}}"><button>Allotment List</button></a>
+            <a href="{{url_for('home')}}"><button>Log out</button></a>
+        </nav>
+    </div>
+
+   
+
+    <div style="padding: 15px;" align="center">
+        <h1>Invigilator Allotment</h1>
+    </div>
+    <div style="padding: 10px;">
+        <h1>No Exam Center is Alloted yet ......!</h1>
+    </div>
+    
+</div>
+</body>
+</html>

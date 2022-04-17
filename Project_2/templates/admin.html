@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Admin</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+    </head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <a href="{{url_for('admin')}}"><button>Home</button></a>
+            <a href="{{url_for('exam_center')}}"><button>Add Exam Center</button></a>
+            <a href="{{url_for('res')}}"><button>Invigilator Booking</button></a>
+            <a href="{{url_for('staff_allotment_list')}}"><button>Booking List</button></a>
+            <a href="{{url_for('home')}}"><button>Log out</button></a>
+        </nav>
+    </div>
+    <h1 style="color:white;" align="center">Welcome Admin</h1>
+   
+
+    <div class="nav_list">
+        <table align="center">
+            <tr>
+                <td><button style="background-color: cadetblue;"><a href="{{url_for('exam_center')}}">Add Exam Center</a></button></td>
+                <td><button style="background-color: rgb(251, 255, 0);"><a href="{{url_for('update_exam_center')}}">Update Exam Center</a></button></td>
+                <td><button style="background-color: rgb(105, 105, 105);"><a href="{{url_for('exam_center_details')}}">Exam Center Details</a></button></td>
+            </tr>
+            <tr>
+                <td><button style="background-color: palegreen;"><a href="{{url_for('res')}}">Invigilator Booking</a></button></td>
+                <td><button style="background-color: sandybrown;"><a href="{{url_for('staff_allotment_list')}}">Booking List</a></button></td>
+                <td><button style="background-color: rgb(240, 176, 190);"><a href="{{url_for('staff_details')}}">Invigilator details</a></button></td>
+            </tr>
+            <tr>
+                <td><button style="background-color: red"><a href="{{url_for('delete_staff_allot_record')}}">Delete Booking Data</a></button></td>
+                <td><button style="background-color: rgb(120, 59, 218)"><a href="{{url_for('prev_allotment_list')}}">Previous Booking List</a></button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

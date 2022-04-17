@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Invigilator Booking - Admin</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+    </head>
+
+<body>
+    <div class="nav">
+        <nav>
+            <a href="{{url_for('admin')}}"><button>Home</button></a>
+            <a href="{{url_for('home')}}"><button>Log out</button></a>
+        </nav>
+    </div>
+    <form action=http://localhost:5000/booked method=POST>
+    <div class="staff_allot">
+        <table align="center" >
+            <tr><td>Enter Date of Exam</td><td><input type="date" name="date"></td></tr>
+            <tr><td>Enter Exam Timings :</td></tr>
+            <tr><td>From :</td><td><input type="time" name="time1"></td></tr>
+            <tr><td>To :</td><td><input type="time" name="time2"></td></tr>
+        </table>
+    </div>
+    <div id="submit">
+        <center><input class="submit_staff" type=submit value="Make Invigilator Allotment"></center>
+    </div>
+    </form>
+</body>
+</html>

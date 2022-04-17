@@ -1,0 +1,31 @@
+.staff_add{
+    padding: 30px;
+    padding-left: 10%;
+}
+.staff_add tr{
+    padding: 20px;
+}
+.staff_add td{
+    color:white;
+    font-size: 30px;
+    padding: 10px;
+}
+.staff_add input{
+    height:40px;
+    font-size: 20px;
+    width:80%;
+}
+.submit {
+    border:none;
+    padding:1%;
+    width:20%;
+    background-color: rgb(77, 243, 215);
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+fieldset{
+    padding-bottom: 40px;
+}
